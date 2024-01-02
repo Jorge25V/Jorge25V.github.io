@@ -29,7 +29,7 @@ const $btnMenu = d.querySelector(".menu-btn"),
       e.preventDefault();
 
       $loader.classList.remove("none");
-      fetch("https://formsubmit.co/ajax/hernandezkaren02f@gmail.com", {
+      fetch("https://formsubmit.co/ajax/jv3262537@gmail.com", {
         method: "POST",
         body:new FormData(e.target),
       })
