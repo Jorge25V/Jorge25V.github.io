@@ -29,7 +29,7 @@ const $btnMenu = d.querySelector(".menu-btn"),
       e.preventDefault();
 
       $loader.classList.remove("none");
-      fetch("https://formsubmit.co/ajax/gomezcastillojuanyovani@gmail.com", {
+      fetch("https://formsubmit.co/ajax/hernandezkaren02f@gmail.com", {
         method: "POST",
         body:new FormData(e.target),
       })
@@ -41,7 +41,7 @@ const $btnMenu = d.querySelector(".menu-btn"),
       })
       .catch((err) => {
         console.log(err);
-        let message = err.statusText || "Ocurio un error al enviar, intenta nuevamente"
+        let message = err.statusText || "An error occurred while sending, please try again"
         $response.querySelector("h3").innerHTML = `Error ${err.status}:${message}`;
         
       }).finally(() => {
